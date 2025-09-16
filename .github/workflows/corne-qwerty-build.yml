@@ -9,9 +9,10 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
+      # Corrected format with brackets and quotes
       # The controller board for your keyboard (e.g., nice_nano_v2)
-      board: 'nice_nano_v2'
+      board: '["nice_nano_v2"]'
       # The keyboard shield (use "corne_left" and "corne_right" for each half)
-      shield: 'corne_left corne_right'
+      shield: '["corne_left", "corne_right"]'
       # Set the main alphabet layer to QWERTY
-      alphas: 'qwerty'
+      alphas: '["qwerty"]'
