@@ -1,5 +1,5 @@
 # This name will appear in the GitHub Actions list.
-name: 'Build Miryoku QWERTY CONFIG_ZMK_POINTING for Corne'
+name: 'Build Miryoku QWERTY Pointing for Corne'
 
 on:
   workflow_dispatch:
