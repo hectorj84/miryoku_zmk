@@ -9,11 +9,13 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      # Corrected format with brackets and quotes
-      # The controller board for your keyboard (e.g., nice_nano_v2)
       board: '["nice_nano_v2"]'
-      # The keyboard shield (use "corne_left" and "corne_right" for each half)
       shield: '["corne_left", "corne_right"]'
-      kconfig: '["CONFIG_ZMK_POINTING=y"]'
-      # Set the main alphabet layer to QWERTY
       alphas: '["qwerty"]'
+      # 1. This tells Miryoku to use the pointing-compatible keymap
+      mapping: '["pointing"]'
+      # 2. This enables the ZMK driver code
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
+      # 3. CRITICAL: Use the branch that supports the pointing feature
+      zmk_branch: '["main"]' 
+      zmk_repo: '["zmkfirmware/zmk"]'
