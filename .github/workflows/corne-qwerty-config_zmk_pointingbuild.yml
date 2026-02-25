@@ -16,4 +16,4 @@ jobs:
       shield: '["corne_left", "corne_right"]'
       # Set the main alphabet layer to QWERTY
       alphas: '["qwerty"]'
-      kconfig: '["CONFIG_ZMK_DISPLAY=y"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
