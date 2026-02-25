@@ -1,5 +1,5 @@
 # This name will appear in the GitHub Actions list.
-name: 'Build MiryokuCorne QWERTYPointing'
+name: 'Build MiryokuCorneQWERTYPointing'
 
 on:
   workflow_dispatch:
